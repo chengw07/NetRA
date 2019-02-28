@@ -23,27 +23,39 @@ Mac:
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+
 brew update
+
 brew install python@2  # Python 2
+
 sudo pip install -U virtualenv  # system-wide install
+
 
 Ubuntu:
 
 sudo apt update
+
 sudo apt install python-dev python-pip
+
 sudo pip install -U virtualenv  # system-wide install
+
 
 2). Create a new virtual environment by choosing a Python interpreter
 
 
 virtualenv --system-site-packages -p python2.7 ./venv
+
 source ./venv/bin/activate
+
 pip install --upgrade pip
 
 3). install torch version 0.3.1
+
 pip install torch==0.3.1
 
 
 4). install packages
+
 pip install networkx
+
 pip install scipy
